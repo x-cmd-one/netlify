@@ -1,0 +1,12 @@
+[build]
+  publish = "./"
+
+[[redirects]]
+  from = "/*"
+  to = "https://x-cmd.com/:splat"
+  status = 301
+  force = true
+
+[[edge_functions]]
+  path = "/api/version"
+  function = "version"
